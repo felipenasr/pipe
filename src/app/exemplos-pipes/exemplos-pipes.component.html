@@ -2,13 +2,15 @@
 <p> <b>rating:</b>  {{ livro.rating | number: '1.1-1' }}  </p> 
 <p> <b>pages:</b>   {{ livro.pages | number  }}   </p> 
 <p> <b>price:</b>   {{ livro.price | currency:"BRL":"symbol" }}   </p> 
-<p> <b>release:</b> {{ livro.release | date:'dd-MMM-yy'}} </p> 
+<p> <b>release:</b> {{ livro.release | date}} </p> 
 <p> <b>url:</b>     {{ livro.url }}     </p> 
 
 <br><br>
-<p> <b>url:</b>     {{ livro | json }}     </p> 
+
 
 <br><br>
+<p>  <b>data:</b>     {{ livro | json }}     </p> 
+
 
 
 
